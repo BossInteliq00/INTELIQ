@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INTELIQ Қосымшалары</title>
+  <link rel="icon" href="images/thumb1.jpeg" type="image/jpeg">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+    }
+
+    .header {
+      position: relative;
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(135deg, #e0e0e0, #c9d6ff);
+      backdrop-filter: blur(8px);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+      animation: floatLogo 4s ease-in-out infinite;
+    }
+
+    @keyframes floatLogo {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .header h1 {
+      font-size: 36px;
+      color: #2c3e50;
+      margin: 10px 0;
+    }
+
+    .moving-text {
+      font-size: 20px;
+      color: #0d6e44;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      height: 30px;
+      margin-top: 10px;
+    }
+
+    .moving-text span {
+      position: absolute;
+      animation: moveText 10s infinite linear;
+    }
+
+    @keyframes moveText {
+      0% { left: 100%; opacity: 0; }
+      20% { left: 50%; opacity: 1; }
+      50% { left: 50%; opacity: 1; }
+      80% { left: -50%; opacity: 0; }
+      100% { left: -100%; opacity: 0; }
+    }
+
+    .app-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .app-card {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      width: 280px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInCard 1s ease-in-out forwards;
+    }
+
+    .app-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .app-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .app-card .info {
+      padding: 15px;
+    }
+
+    .app-card h2 {
+      font-size: 20px;
+      margin: 0;
+      color: #2d3436;
+    }
+
+    .app-card p {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .app-card a {
+      display: inline-block;
+      padding: 8px 15px;
+      background: #2980b9;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #888;
+      background: #f1f1f1;
+    }
+
+    @keyframes fadeInCard {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="images/thumb1.jpeg" alt="INTELIQ Logo" class="logo">
+    <h1>Менің Мобильді Қосымшаларым</h1>
+    <div class="moving-text">
+      <span>Қош келдіңіз! Бұл жерде менің барлық қосымшаларым жиналған!</span>
+    </div>
+  </div>
+
+  <main class="app-grid">
+    <div class="app-card">
+      <img src="images/app1.jpeg" alt="SuperApp">
+      <div class="info">
+        <h2>SuperApp</h2>
+        <p>Әртүрлі мүмкіндіктері бар мектеп оқушыларына арналған қосымша.</p>
+        <a href="app1.html">Толығырақ</a>
+      </div>
+    </div>
+
+    <div class="app-card">
+      <img src="images/app2.jpeg" alt="QuizMath">
+      <div class="info">
+        <h2>QuizMath</h2>
+        <p>Қосуға арналған қызықты тапсырмалар.</p>
+        <a href="app2.html">Толығырақ</a>
+      </div>
+    </div>
+
+    <div class="app-card">
+      <img src="images/app3.jpeg" alt="MathQuizApp">
+      <div class="info">
+        <h2>MathQuizApp</h2>
+        <p>Амалдармен жарысып, жеңімпаз болыңыз!</p>
+        <a href="app3.html">Толығырақ</a>
+      </div>
+    </div>
+
+    <div class="app-card">
+      <img src="images/app4.jpeg" alt="IQquizApp">
+      <div class="info">
+        <h2>IQquizApp</h2>
+        <p>100 сұрақ арқылы біліміңізді сынаңыз.</p>
+        <a href="app4.html">Толығырақ</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 | INTELIQ — Saipolla Askhat
+  </footer>
+</body>
+</html>
